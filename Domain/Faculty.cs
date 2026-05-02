@@ -3,10 +3,14 @@ namespace ITSC_3112_Final_Project.Domain;
 public class Faculty : Person
 { 
     public int EmployeeId { get; set; }
+    public string Username { get; set; }
+    public string Password { get; set; }
     
-    public Faculty(string name, string email, string phoneNumber, int employeeId) : base(name, email, phoneNumber)
+    public Faculty(string name, string email, string phoneNumber, int employeeId,string username, string password) : base(name, email, phoneNumber)
     {
         EmployeeId = employeeId;
+        Username = username;
+        Password = password; 
     }
 
     public Member? SearchMember(string value, List<Member> members)
