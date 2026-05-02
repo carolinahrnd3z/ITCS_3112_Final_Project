@@ -8,4 +8,5 @@ public interface IFacultyRepository
     Faculty? GetById(int employeeId);
     void Add(Faculty faculty);
     void Update(Faculty faculty);
+    List<Faculty> GetAll();
 }

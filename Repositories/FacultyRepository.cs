@@ -36,4 +36,9 @@ public class FacultyRepository : IFacultyRepository
         existing.PhoneNumber = faculty.PhoneNumber;
         existing.EmployeeId = faculty.EmployeeId;
     }
+    
+    public List<Faculty> GetAll()
+    {
+        return facultyMembers;
+    }
 }
