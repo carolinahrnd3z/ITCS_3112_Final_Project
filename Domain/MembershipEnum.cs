@@ -1,4 +1,4 @@
-namespace ITSC_3112_Final_Project.Domain;
+namespace ITCS_3112_Final_Project.Domain;
 
 public enum MembershipEnum
 {
