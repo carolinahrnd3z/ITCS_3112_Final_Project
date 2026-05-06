@@ -431,8 +431,13 @@ public class ConsoleUI
         Console.Write("Enter class name: ");
         string name = Console.ReadLine() ?? "";
 
-        Console.Write("Enter schedule: ");
-        string schedule = Console.ReadLine() ?? "";
+        Console.Write("Enter day: ");
+		string day = Console.ReadLine() ?? "";
+
+		Console.Write("Enter time: ");
+       	string time = Console.ReadLine() ?? "";
+
+		Schedule schedule = new Schedule(day, time);
 
         Console.Write("Enter capacity: ");
 
@@ -445,13 +450,13 @@ public class ConsoleUI
         Console.Write("Enter instructor name: ");
         string instructor = Console.ReadLine() ?? "";
 
-        GymClass? gymClass = typeChoice switch
-        {
-            "1" => new YogaClass(name, schedule, capacity, instructor),
-            "2" => new StrengthClass(name, schedule, capacity, instructor),
-            "3" => new ZumbaClass(name, schedule, capacity, instructor),
-            _ => null
-        };
+        GymClass? gymClass = GymClassFactory.CreateGymClass(
+		choice ?? "",
+		name,
+		schedule,
+		capacity,
+		instructor
+		);
 
         if (gymClass == null)
         {
