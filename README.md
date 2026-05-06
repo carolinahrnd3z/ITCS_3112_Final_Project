@@ -18,7 +18,7 @@ Core features include:
 - Project Type: Console Application
 
 ### Steps to Build and Run
-1. Open the project in JetBrains Rider or Visual Studio.
+1. Open the project in JetBrains Rider.
 2. Restore any required .NET dependencies if prompted.
 3. Build the solution.
 4. Run the project using the IDE run button or by running the project through the terminal.
