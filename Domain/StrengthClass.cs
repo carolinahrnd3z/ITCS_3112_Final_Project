@@ -9,7 +9,7 @@ public class StrengthClass : GymClass
     /// <param name="schedule">The class schedule.</param>
     /// <param name="capacity">The maximum capacity.</param>
     /// <param name="instructor">The instructor's name.</param>
-    public StrengthClass(string name, string schedule, int capacity, string instructor)
+    public StrengthClass(string name, Schedule schedule, int capacity, string instructor)
         : base(name, schedule, capacity, instructor, new List<Member>())
     {
     }
