@@ -3,7 +3,7 @@ namespace ITCS_3112_Final_Project.Domain;
 public abstract class GymClass
 {
     public string Name { get; set; }
-    public string Schedule { get; set; }
+    public Schedule Schedule { get; set; }
     public int Capacity { get; set; }
     public string Instructor { get; set; }
     private List<Member> enrolledMembers = new List<Member>();
@@ -16,7 +16,7 @@ public abstract class GymClass
     /// <param name="capacity">The maximum number of members allowed.</param>
     /// <param name="instructor">The instructor of the class.</param>
     /// <param name="enrolledMembers">The list of enrolled members.</param>
-    public GymClass(string name, string schedule, int capacity, string instructor, List<Member> enrolledMembers)
+    public GymClass(string name, Schedule schedule, int capacity, string instructor, List<Member> enrolledMembers)
     {
         Name = name;
         Schedule = schedule;
