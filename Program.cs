@@ -83,9 +83,9 @@ class Program
         // Create Gym Classes
         List<GymClass> gymClasses = new()
         {
-            new YogaClass("Yoga", "Monday 6PM", 10, "Sarah"),
-            new StrengthClass("Strength Training", "Tuesday 5PM", 8, "Mike"),
-            new ZumbaClass("Zumba", "Wednesday 7PM", 12, "Maria")
+            new YogaClass("Yoga", new Schedule(), 10, "Sarah"),
+            new StrengthClass("Strength Training", new Schedule(), 8, "Mike"),
+            new ZumbaClass("Zumba", new Schedule(), 12, "Maria")
         };
         
         //Pre enroll members

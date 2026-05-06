@@ -1,4 +1,4 @@
-namespace DefaultNamespace;
+namespace ITCS_3112_Final_Project.Domain;
 
 public struct Schedule
 {
@@ -13,6 +13,6 @@ public struct Schedule
 
     public override string ToString()
     {
-        return $"{Day} at {Time}"
+        return $"{Day} at {Time}";
     }
 }

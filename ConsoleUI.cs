@@ -451,7 +451,7 @@ public class ConsoleUI
         string instructor = Console.ReadLine() ?? "";
 
         GymClass? gymClass = GymClassFactory.CreateGymClass(
-		choice ?? "",
+		typeChoice ?? "",
 		name,
 		schedule,
 		capacity,
